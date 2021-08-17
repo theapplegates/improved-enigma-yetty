@@ -27,6 +27,8 @@
 
     <script src="{% if yetty.environment === 'production' %}{{ '/assets/scripts/bundle.min.js' | url | cacheBuster }}{% else %}{{ '/assets/scripts/index.js' | url | cacheBuster }}{% endif %}"></script>
 
+<script src="https://kit.fontawesome.com/96d943cb0f.js" crossorigin="anonymous"></script>
+
     {% block js %}{% endblock %}
 
   </body>
